@@ -30,7 +30,7 @@
     }@inputs:
     let
       system = "x86_64-linux";
-    host = "zaneyos-24-vm";
+    host = "zaneyos-oem";
     profile = "vm";
       username = "dwilliams";
 
