@@ -3,6 +3,7 @@
 , username
 , host
 , profile
+, lib
 , ...
 }:
 let
@@ -19,7 +20,7 @@ in
       imports = [ ./../home ];
       home = {
         username = "${username}";
-        homeDirectory = "/home/${username}";
+        homeDirectory = lib.mkForce "/home/${username}";
         stateVersion = "23.11";
       };
     };
